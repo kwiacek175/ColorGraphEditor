@@ -14,6 +14,18 @@ Projekt wykorzystuje następujące narzędzia i technologie:
 - **Java AWT**: Używana do obsługi zdarzeń myszki i klawiatury oraz rysowania grafiki.
 
 ## 3. Struktura projektu
+ **Edge.java** – Plik zawiera klasę `Edge`, która reprezentuje krawędź w grafie. Klasa ta przechowuje informacje o dwóch węzłach (punktach), które łączy, oraz o kolorze krawędzi. Zapewnia także metody do modyfikacji koloru i uzyskiwania informacji o połączeniu.
+
+- **Node.java** – Plik zawiera klasę `Node`, która reprezentuje pojedynczy węzeł w grafie. Każdy węzeł przechowuje swoje położenie (współrzędne), nazwę oraz kolor. Oferuje metody do edytowania tych właściwości i rysowania węzła na ekranie.
+
+- **Graph.java** – Plik zawiera klasę `Graph`, która reprezentuje całą strukturę grafu. Utrzymuje listę węzłów i krawędzi, zarządza ich dodawaniem, usuwaniem i edytowaniem. Klasa ta jest odpowiedzialna za logikę manipulacji grafem, jak również za przekazywanie informacji między obiektami `Node` i `Edge`.
+
+- **GraphPanel.java** – Plik zawiera klasę `GraphPanel`, która odpowiada za rysowanie grafu na ekranie. Jest to komponent Swing, który wykorzystuje metody klasy `Graph` do wizualizacji węzłów i krawędzi. Obsługuje także zdarzenia myszy, umożliwiając użytkownikowi interakcję z grafem (dodawanie, edytowanie, usuwanie węzłów i krawędzi).
+
+- **ColorGraphEditor.java** – Plik zawiera klasę `ColorGraphEditor`, która łączy funkcjonalności tworzenia, edytowania i rysowania grafu w jednym interfejsie. Umożliwia użytkownikowi zarządzanie kolorami węzłów i krawędzi oraz interakcję z grafem poprzez wybór kolorów z palety. Zawiera funkcje takie jak zmiana koloru krawędzi i węzłów oraz edycja nazw.
+
+- **GraphWindowDialog.java** – Plik zawiera klasę `GraphWindowDialog`, która zarządza interfejsem graficznym aplikacji. To główne okno programu, które umożliwia dodawanie węzłów, krawędzi, ich edytowanie oraz usuwanie. Zawiera także metody do obsługi zdarzeń, takich jak kliknięcia myszy, wybór kolorów oraz modyfikowanie właściwości grafu.
+
 
 ## 4. Funkcjonalności projektu
 
