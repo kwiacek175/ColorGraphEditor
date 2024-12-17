@@ -7,6 +7,9 @@
 ### `GraphWindowDialog.java`
 Klasa `GraphWindowDialog` odpowiada za obsługę okien dialogowych umożliwiających tworzenie i edytowanie węzłów i krawędzi w grafie. Umożliwia dodawanie nowych węzłów oraz krawędzi (zarówno czarnych, jak i kolorowych), jak również ich modyfikowanie (zmiana koloru, usuwanie).
 
+### `GraphPanel.java`
+Klasa odpowiedzialna za renderowanie grafu na ekranie. Zawiera logikę rysowania węzłów, krawędzi i umożliwia interakcję z użytkownikiem. Umożliwia kliknięcie węzłów i krawędzi, a także ich przeciąganie. `GraphPanel` jest częścią głównego okna programu, zapewniając płynne wyświetlanie grafu oraz jego edytowanie w czasie rzeczywistym.
+
 ### `ColorGraphEditor.java`
 Klasa główna aplikacji, która tworzy główne okno programu, zawiera menu oraz zarządza interakcją użytkownika. Umożliwia zapis i odczyt grafów z plików, wyświetlanie listy węzłów i krawędzi oraz pokazywanie informacji o autorze i instrukcji obsługi programu.
 
@@ -32,14 +35,18 @@ Reprezentuje węzeł w grafie. Węzły mogą mieć przypisane kolory i nazwy.
      - Zmiana nazwy węzła.
      - Usuwanie węzła lub krawędzi.
 
-3. **Interakcja z klawiaturą**:
+3. **Interakcja z myszką**:
+   - Program pozwala na interakcję z grafem za pomocą myszy, umożliwiając dodawanie węzłów, tworzenie krawędzi oraz edytowanie ich właściwości poprzez kliknięcia prawym przyciskiem.
+   - Węzły i krawędzie mogą być przeciągane i przesuwane na obszarze roboczym.
+
+4. **Interakcja z klawiaturą**:
    - Klawiatura umożliwia szybkie zmienianie kolorów węzłów i krawędzi za pomocą klawiszy: `r`, `g`, `b`, `y`, `c`, `m`, `w` (dla czerwonego, zielonego, niebieskiego, żółtego, cyjanowego, magenta i białego).
    - `DEL` pozwala na usuwanie węzłów i krawędzi.
 
-4. **Menu**:
+5. **Menu**:
    - Program zawiera menu umożliwiające zapis i otwieranie grafów z plików, a także wyświetlanie listy węzłów i krawędzi.
 
-5. **Przesuwanie grafu**:
+6. **Przesuwanie grafu**:
    - Graf można przesuwać za pomocą strzałek na klawiaturze. Użycie `SHIFT` umożliwia szybsze przesuwanie.
 
 ## Uruchomienie
