@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="LAB4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ColorGraphEditor.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SimpleGraphEditor.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
